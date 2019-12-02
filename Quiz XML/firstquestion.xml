@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="388dp"
+        android:text="How much do you spend on beauty supplies monthly?"
+        android:textAlignment="center"
+        android:textSize="45sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/A"
+        android:layout_width="match_parent"
+        android:layout_height="85sp"
+        android:text="$5" />
+
+    <Button
+        android:id="@+id/B"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:text="$15" />
+
+    <Button
+        android:id="@+id/C"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:text="$30" />
+
+    <Button
+        android:id="@+id/D"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:text="$50+" />
+
+</LinearLayout>
