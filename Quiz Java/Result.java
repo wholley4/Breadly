@@ -11,38 +11,39 @@ import android.widget.TextView;
 import android.content.Intent;
 
 public class Result extends Activity {
-        // placeholder that you will be updating with the database data
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
+    // placeholder that you will be updating with the database data
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
 
-            int finaltally = QuestionFour.getTally();
-            String finalbread = "Hardtack";
+        int finaltally = QuestionFour.getTally();
+        String finalbread = "Hardtack";
 
-            if (finaltally > 6)
-                finalbread = "Hardtack";
+        if (finaltally > 6)
+            finalbread = "Hardtack";
 
 
-            if (finaltally >=6 && finaltally <= 9 ) {
-                finalbread = "Ciabatta";
-            }
+        if (finaltally >= 6 && finaltally <= 9) {
+            finalbread = "Ciabatta";
+        }
 
-            if (finaltally >9 && finaltally <= 12 ) {
-                finalbread = "Mountain Bread";
-            }
+        if (finaltally > 9 && finaltally <= 12) {
+            finalbread = "Mountain Bread";
+        }
 
-            if (finaltally >= 13 ){
-                finalbread = "Hardtack";
-            }
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.fourthquestion);
-            // find the screen element that you need
-            TextView result = (TextView) findViewById (R.id.result);
-            result.setText("You are " + finalbread);
-            Button back = (Button) findViewById(R.id.back);
-            Button findrecipes = (Button) findViewById (R.id.findrecipes);
+        if (finaltally >= 13) {
+            finalbread = "Hardtack";
+        }
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fourthquestion);
+        // find the screen element that you need
+        TextView result = (TextView) findViewById(R.id.result);
+        result.setText("You are " + finalbread);
+        Button back = (Button) findViewById(R.id.back);
+        Button findrecipes = (Button) findViewById(R.id.findrecipes);
 
-            //set the onClick listener for the button
-            back.setOnClickListener(new View.OnClickListener()
+        //set the onClick listener for the button
+        //The app was crashing originally because
+            /*back.setOnClickListener(new View.OnClickListener()
                                     {
                                         @Override
                                         public void onClick(View v){
@@ -60,4 +61,7 @@ public class Result extends Activity {
                                            }//end OnClickListener
             );//end loadDataButton.setOnClickListener
         }//end getDataFromDatabase()
+
+             */
     }
+}
